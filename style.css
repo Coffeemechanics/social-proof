@@ -1,0 +1,313 @@
+:root {
+  --very_dark_magenta: hsl(300, 43%, 22%);
+  --soft_pink: hsl(333, 80%, 67%);
+  --dark_grayish_magenta: hsl(303, 10%, 53%);
+  --light_grayish_magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Spartan", sans-serif;
+  background-image: url(./images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-part {
+  width: 23.0625rem;
+  height: 9.5625rem;
+  color: var(--very_dark_magenta);
+  font-weight: 700;
+  font-size: 2.66rem;
+  display: flex;
+  text-align: left;
+  margin: 7.8125rem auto 0.75rem 11rem;
+}
+.small-part {
+  width: 26.5rem;
+  height: 4.125rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--dark_grayish_magenta);
+  margin-left: 10.375rem;
+  line-height: 1.36rem;
+  justify-content: right;
+  text-align: left;
+  margin-left: 11rem;
+}
+.stars {
+  margin-top: 7.8125rem;
+  margin-left: 12.5rem;
+  position: relative;
+  right: 3rem;
+}
+
+.reviews,
+.guru,
+.best-tech {
+  background-color: var(--light_grayish_magenta);
+  width: 27.75rem;
+  height: 3.5625rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+.guru {
+  margin-left: 2.8rem;
+}
+.best-tech {
+  margin-left: 5.9375rem;
+}
+
+.reviews-left,
+.guru-left,
+.best-tech-left {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 7.3125rem;
+  height: 1.0625rem;
+  margin-left: 2rem;
+}
+.reviews-right,
+.guru-right,
+.best-tech-right {
+  margin-top: 0.25rem;
+  font-weight: 700;
+  color: var(--very_dark_magenta);
+
+  font-size: 14px;
+}
+.reviews-right {
+  margin-right: 4rem;
+}
+.guru-right {
+  margin-right: 2.3rem;
+}
+.best-tech-right {
+  margin-right: 3.8rem;
+}
+.stars img {
+  margin-right: 0.5625rem;
+  margin-top: 2.4rem;
+}
+span {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.three-columns {
+  width: 73.375rem;
+  height: 16.6875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10.375rem;
+  margin-top: 4rem;
+}
+.left-box,
+.mid-box,
+.right-box {
+  margin-right: 2rem;
+  background-color: var(--very_dark_magenta);
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  border-radius: 0.5rem;
+}
+.left-box {
+  width: 22rem;
+  height: 14.6875rem;
+  display: flex;
+  margin-top: -1.875rem;
+}
+.mid-box {
+  width: 22rem;
+  height: 14.6875rem;
+}
+.right-box {
+  width: 22rem;
+  height: 14.6875rem;
+  margin-top: 1.875rem;
+}
+
+.three-columns img {
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 2rem;
+  margin-top: 2.3rem;
+}
+
+.name-verify {
+  display: inline-block;
+  margin-top: -2.3rem;
+  margin-right: 3.125rem;
+}
+.name-verify h5 {
+  color: var(--white);
+}
+.name-verify p {
+  color: var(--soft_pink);
+  font-size: 13px;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+.quotes {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  font-size: 13px;
+  width: 19rem;
+  margin: 0.3rem 2rem 2.3rem 1.8rem;
+  line-height: 1.3125rem;
+  word-spacing: 0.11rem;
+}
+.attribution {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 0.75rem;
+}
+.attribution a {
+  text-decoration: none;
+  font-weight: 500;
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 851px) {
+  body {
+    background-image: url(./images/bg-pattern-top-mobile.svg),
+      url(images/bg-pattern-bottom-mobile.svg);
+    background-position: top center, bottom center;
+    background-repeat: no-repeat;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 23.4375rem;
+    justify-content: center;
+    /* align-items: center;
+    text-align: center; */
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    /* align-self: center; */
+  }
+  .two-columns {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .attraction-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 2rem;
+    /* align-items: center; */
+  }
+  .big-part {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    width: 20.56525rem;
+    margin-left: 11.7rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+  }
+  .small-part {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 19.875rem;
+    margin-left: 12.0875rem;
+  }
+  .stars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    width: 20.5625rem;
+    margin-left: 19.375rem;
+    margin-top: 3.5rem;
+  }
+  .reviews,
+  .guru,
+  .best-tech {
+    /* display: inline-block; */
+    align-self: center;
+    width: 21.5625rem;
+    height: 4.8125rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .stars img {
+    margin-top: 1.73rem;
+  }
+  .reviews-left,
+  .guru-left,
+  .best-tech-left {
+    margin-left: 7.3rem;
+  }
+  .reviews-right,
+  .guru-right,
+  .best-tech-right {
+    margin-top: 1.6rem;
+    position: relative;
+    right: 0.5rem;
+  }
+  .guru-right {
+    position: relative;
+    right: 1.05rem;
+  }
+  .best-tech-right {
+    position: relative;
+    right: 0.6rem;
+  }
+  .guru,
+  .best-tech {
+    margin-left: 0;
+  }
+
+  .three-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 20.5625rem;
+    height: 48.625rem;
+    font-size: 15px;
+    margin-left: 16rem;
+  }
+  .quotes {
+    width: 18rem;
+  }
+  .right-box {
+    margin-top: 0;
+  }
+  .attribution {
+    margin-left: 14.5rem;
+  }
+}
