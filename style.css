@@ -25,6 +25,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+h2 {
+  font-size: 0.9375rem;
+}
 
 .big-part {
   width: 23.0625rem;
@@ -164,7 +167,7 @@ span {
   margin-top: -2.3rem;
   margin-right: 3.125rem;
 }
-.name-verify h5 {
+.name-verify h2 {
   color: var(--white);
 }
 .name-verify p {
