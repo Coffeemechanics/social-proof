@@ -110,6 +110,13 @@ span {
   text-align: center;
   margin-bottom: 1.25rem;
 }
+#old-span {
+  display: inline-block;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
 .three-columns {
   width: 73.375rem;
   height: 16.6875rem;
