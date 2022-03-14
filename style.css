@@ -37,7 +37,7 @@ h2 {
   font-size: 2.66rem;
   display: flex;
   text-align: left;
-  margin: 7.8125rem auto 0.75rem 11rem;
+  margin: 7.8125rem auto 0.75rem 9rem;
 }
 .small-part {
   width: 26.5rem;
@@ -49,7 +49,7 @@ h2 {
   line-height: 1.36rem;
   justify-content: right;
   text-align: left;
-  margin-left: 11rem;
+  margin-left: 9rem;
 }
 .stars {
   margin-top: 7.8125rem;
@@ -126,7 +126,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10.375rem;
+  margin-left: 8.375rem;
   margin-top: 4rem;
 }
 .left-box,
@@ -210,13 +210,15 @@ span {
     flex-direction: column;
     width: 23.4375rem;
     justify-content: center;
-    /* align-items: center;
-    text-align: center; */
+    align-self: center;
+    align-items: center;
+    /*text-align: center; */
   }
   section {
     display: flex;
     flex-direction: column;
-    /* align-self: center; */
+    justify-content: center;
+    align-self: center;
   }
   .two-columns {
     flex-direction: column;
@@ -229,8 +231,8 @@ span {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-left: 2rem;
-    /* align-items: center; */
+    align-items: center;
+    align-self: center;
   }
   .big-part {
     display: flex;
@@ -238,17 +240,21 @@ span {
     text-align: center;
     justify-content: center;
     font-size: 2.5rem;
-    width: 20.56525rem;
-    margin-left: 11.7rem;
+    width: 22.56525rem;
+    margin-left: 6rem;
     line-height: 2.6rem;
     font-weight: 700;
+    /* border: 2px solid black; */
   }
   .small-part {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 19.875rem;
-    margin-left: 12.0875rem;
+    width: 20rem;
+    margin-left: 5.0875rem;
+    /* border: 2px solid black; */
+    height: fit-content;
+    line-height: 1.6rem;
   }
   .stars {
     display: flex;
@@ -258,7 +264,7 @@ span {
     align-items: center;
     align-content: center;
     width: 20.5625rem;
-    margin-left: 19.375rem;
+    /* margin-left: 19.375rem; */
     margin-top: 3.5rem;
   }
   .reviews,
@@ -309,7 +315,7 @@ span {
     width: 20.5625rem;
     height: 48.625rem;
     font-size: 15px;
-    margin-left: 16rem;
+    margin-left: 8rem;
   }
   .quotes {
     width: 18rem;
@@ -318,6 +324,6 @@ span {
     margin-top: 0;
   }
   .attribution {
-    margin-left: 14.5rem;
+    margin-left: 2rem;
   }
 }
