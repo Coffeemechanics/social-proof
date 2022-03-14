@@ -113,7 +113,9 @@ span {
   text-align: center;
   margin-bottom: 1.25rem;
 }
-#old-span {
+#old-span_colton,
+#old-span_Irene,
+#old-span_Anne {
   display: inline-block;
   justify-content: flex-end;
   align-items: center;
